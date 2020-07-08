@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PrincipalService } from 'src/app/services/principal.service';
+import { Tarea } from 'src/app/models/tarea';
 
 @Component({
   selector: 'app-formulario',
@@ -6,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent implements OnInit {
+  public descripcion: string;
 
-  constructor() { }
+  constructor(private tareaSvc: PrincipalService) { 
+
+  }
 
   ngOnInit(): void {
+  }
+
+  procesar(): void{
+    if (this.descripcion && this.descripcion !== ''){
+      //console.log(this.descripcion);
+      const tarea = new Tarea();
+      tarea.descripcion = this.descripcion;
+      this.tareaSvc.tareas.push(tarea);
+      //console.log(tarea);
+    }
   }
 
 }
