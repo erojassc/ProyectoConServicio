@@ -1,3 +1,8 @@
+<span>{{tarea.usuario}}</span>
+<a> - </a>
 <span>{{tarea.descripcion}}</span>
+<a> - </a>
+<span>{{tarea.fecha.getDate()}}/{{tarea.fecha.getMonth()}}/{{tarea.fecha.getFullYear()}}  
+    {{tarea.fecha.getHours()}}:{{tarea.fecha.getMinutes()}}:{{tarea.fecha.getSeconds()}}</span>
 &nbsp;
 <button (click)="eliminar()">X</button>
