@@ -3,5 +3,5 @@ export class Tarea {
     public descripcion: string;
     public fecha: Date;
     public usuario: string;
-    public estado: boolean;  
+    public estado: string;  
 }

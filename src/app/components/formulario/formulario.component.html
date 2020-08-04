@@ -1,5 +1,17 @@
-<input type="text" name="usuario" [(ngModel)]="usuario" title="Usuario">
-&nbsp;
-<input type="text" name="tarea" [(ngModel)]="descripcion" title="Descripción">
-&nbsp;
-<button (click)="procesar()">Agregar tarea</button>
+<div id="Formulario">
+    <div class="picture">
+        <img src='./assets/LogoTareas.png' width="100px">
+    </div>
+    <aside> 
+        <form>
+            <h4>Ingrese sus Tareas</h4>
+            <h2 class="col-5">Usuario</h2>
+            <input type="text" name="usuario" [(ngModel)]="usuario" title="Usuario">
+            <h2 class="col-5">Descripción</h2>
+            <input type="text" name="tarea" [(ngModel)]="descripcion" title="Descripción">
+            &nbsp;
+            <button (click)="procesar()">Agregar tarea</button>
+        </form>
+    </aside>
+    <div class="clearfix"></div>
+</div>

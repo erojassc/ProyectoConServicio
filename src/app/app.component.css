@@ -1,0 +1,77 @@
+h1 {
+    color: #369;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  ​
+  Header{
+    text-align: center;
+    display: block;
+  }
+  ​
+  #container{
+    width: 1100px;
+    margin: 0px auto;
+    float: left;
+  } 
+  footer{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(1, 1, 20);
+  }
+
+#app-component{
+    display: block;
+    width: 99%;
+    
+}
+/* menu */
+#menu ul {
+    list-style:none;
+    margin:5px;
+    padding:0;
+   }
+      
+   /* enlaces del menu */
+   
+   #menu ul a {
+    display:block;
+    color:rgb(100, 81, 81);
+    text-decoration:none;
+    border-radius: 4px;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:5px;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background: #7aa6e9;
+    border-radius: 4px;
+   }
+
+   #app-formulario{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+   }
+   #app-lista{
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+   }

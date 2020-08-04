@@ -1,0 +1,42 @@
+.id, span:nth-child(1){
+    position: relative;
+    padding: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    border: rgb(155, 201, 238) 1px solid
+}
+.name, span:nth-child(2){
+    position: relative;
+    width: 100px;
+    padding: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.description, span:nth-child(3){
+    width: 150px;
+    padding: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.date, span:nth-child(4){
+    width: 135px;
+    text-align: right;
+    padding: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+}
+
+.delete, button:nth-child(1){
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 7px 7px 7px 7px;
+    -moz-border-radius: 7px 7px 7px 7px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+    border: 0px solid #000000;
+}
+

@@ -1,4 +1,10 @@
-<ul>
+<ul class="tareas">
+    <h4>
+        <span class="id">Id</span>
+        <span class="name" >Usuario</span>
+        <span class="description" >Descripción</span>
+        <span Class="date" >Fecha</span>
+    </h4>
     <li *ngFor="let tarea of service.tareas"> 
         <app-item [tarea]="tarea"></app-item>
     </li>

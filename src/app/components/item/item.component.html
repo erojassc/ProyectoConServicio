@@ -1,8 +1,6 @@
-<span>{{tarea.usuario}}</span>
-<a> - </a>
-<span>{{tarea.descripcion}}</span>
-<a> - </a>
-<span>{{tarea.fecha.getDate()}}/{{tarea.fecha.getMonth()}}/{{tarea.fecha.getFullYear()}}  
+<span class="id">{{tarea.id}}</span>
+<span class="name" >{{tarea.usuario}}</span>
+<span class="description" >{{tarea.descripcion}}</span>
+<span Class="date" >{{tarea.fecha.getDate()}}/{{tarea.fecha.getMonth()}}/{{tarea.fecha.getFullYear()}}  
     {{tarea.fecha.getHours()}}:{{tarea.fecha.getMinutes()}}:{{tarea.fecha.getSeconds()}}</span>
-&nbsp;
-<button (click)="eliminar()">X</button>
+<button (click)="eliminar()" Class="delete" >X</button>

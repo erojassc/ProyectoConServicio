@@ -26,9 +26,12 @@ export class FormularioComponent implements OnInit {
       var today = new Date(); 
       tarea.descripcion = this.descripcion;
       tarea.usuario = this.usuario;
-      tarea.fecha = today; 
-      this.tareaSvc.tareas.push(tarea);
-      //console.log(tarea);
+      tarea.estado = 'A'; 
+      tarea.fecha = today;
+      console.log(tarea);
+      this.tareaSvc.addTarea(tarea).subscribe((resp) => console.log('RESPONSE', resp));
+      this.descripcion='';
+      this.usuario='';
     }
   }
 
